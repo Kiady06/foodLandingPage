@@ -13,15 +13,23 @@
     src: url(../assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     /* background-color: rgb(236, 167, 167); */
     display: flex;
+    background-color: #EBF0F5;
+    height: 60px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     top: 0;
     left: 0;
     position: fixed;
+    z-index: 1000;
 }
 
 .logo {
@@ -47,7 +55,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 30px;
     color: #287dbe;
     align-items: center;
 }
@@ -93,4 +101,21 @@ header {
 
 .searchbar button img {
     filter: brightness(0) invert(1);
+}
+
+.top-img {
+    margin-top: 60px;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.top-img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
 }
